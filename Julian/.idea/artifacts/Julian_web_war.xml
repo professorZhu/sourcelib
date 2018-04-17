@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Julian-web:war">
+    <output-path>$PROJECT_DIR$/Julian-web/target</output-path>
+    <root id="archive" name="Julian-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Julian-web:war exploded" />
+    </root>
+  </artifact>
+</component>

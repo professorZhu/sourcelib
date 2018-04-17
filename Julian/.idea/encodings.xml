@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Julian-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Julian-boot-builder" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Julian-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Julian-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Julian-original" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Julian-referent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Julian-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Julian-web" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jua</groupId>
+    <artifactId>Julian</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>Julian-original</module>
+        <module>Julian-base</module>
+        <module>Julian-referent</module>
+        <module>Julian-dao</module>
+        <module>Julian-service</module>
+        <module>Julian-common</module>
+        <module>Julian-web</module>
+        <module>Julian-boot-builder</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <!-- 打包时跳过测试单元 -->
+        <maven.test.skip>true</maven.test.skip>
+        <!--指定编码 -->
+        <project.build.sourceEncoding>
+            UTF-8
+        </project.build.sourceEncoding>
+        <!-- spring依赖 -->
+        <spring.version>4.0.2.RELEASE</spring.version>
+        <!-- mybatis依赖 -->
+        <mybatis.version>3.2.6</mybatis.version>
+        <mybatis-spring.version>1.2.2</mybatis-spring.version>
+        <!-- log4j依赖 -->
+        <slf4j.version>1.7.7</slf4j.version>
+        <log4j.version>1.2.17</log4j.version>
+        <fastjson.version>1.1.41</fastjson.version>
+        <!--数据库连接依赖  -->
+        <mysql.version>5.1.30</mysql.version>
+        <dbcp.version>1.2.2</dbcp.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <!-- 是否替换资源中的属性-->
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+    </build>
+
+</project>

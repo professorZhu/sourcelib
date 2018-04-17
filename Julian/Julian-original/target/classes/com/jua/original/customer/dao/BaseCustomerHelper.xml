@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BaseCustomerHelper" >
+    <!-- Result Map-->
+    <resultMap id="BaseResultMap" type="com.jua.referent.entity.Customer" >
+        <result column="id" property="id"/>
+        <result column="login_name" property="loginName"/>
+        <result column="phone_num" property="phoneNum"/>
+        <result column="password" property="password"/>
+        <result column="status" property="status"/>
+        <result column="comment" property="comment"/>
+        <result column="create_name" property="createName"/>
+        <result column="create_date" property="createDate"/>
+        <result column="update_name" property="updateName"/>
+        <result column="update_date" property="updateDate"/>
+        <result column="delete_flag" property="deleteFlag"/>
+    </resultMap>
+    <!-- t_customer table all fields -->
+    <sql id="Base_Column_List" >
+        id,login_name,phone_num,password,status,comment,create_name,create_date,update_name,update_date,delete_flag
+    </sql>
+    <!-- 查询条件 -->
+    <sql id="Example_Where_Clause">
+        where 1=1
+        <trim  suffixOverrides="," >
+            <if test="condition.id != null and condition.id != ''" >
+                and id =  #{condition.id}
+            </if>
+            <if test="condition.loginName != null and condition.loginName != ''" >
+                and login_name =  #{condition.loginName}
+            </if>
+            <if test="condition.phoneNum != null and condition.phoneNum != ''" >
+                and phone_num =  #{condition.phoneNum}
+            </if>
+            <if test="condition.password != null and condition.password != ''" >
+                and password =  #{condition.password}
+            </if>
+            <if test="condition.status != null and condition.status != ''" >
+                and status =  #{condition.status}
+            </if>
+            <if test="condition.comment != null and condition.comment != ''" >
+                and comment =  #{condition.comment}
+            </if>
+            <if test="condition.createName != null and condition.createName != ''" >
+                and create_name =  #{condition.createName}
+            </if>
+            <if test="condition.createDate != null and condition.createDate != ''" >
+                and create_date =  #{condition.createDate}
+            </if>
+            <if test="condition.updateName != null and condition.updateName != ''" >
+                and update_name =  #{condition.updateName}
+            </if>
+            <if test="condition.updateDate != null and condition.updateDate != ''" >
+                and update_date =  #{condition.updateDate}
+            </if>
+            <if test="condition.deleteFlag != null and condition.deleteFlag != ''" >
+                and delete_flag =  #{condition.deleteFlag}
+            </if>
+        </trim>
+    </sql>
+
+</mapper>

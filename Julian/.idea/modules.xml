@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Julian.iml" filepath="$PROJECT_DIR$/Julian.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Julian-base/Julian-base.iml" filepath="$PROJECT_DIR$/Julian-base/Julian-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Julian-boot-builder/Julian-boot-builder.iml" filepath="$PROJECT_DIR$/Julian-boot-builder/Julian-boot-builder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Julian-common/Julian-common.iml" filepath="$PROJECT_DIR$/Julian-common/Julian-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Julian-dao/Julian-dao.iml" filepath="$PROJECT_DIR$/Julian-dao/Julian-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Julian-original/Julian-original.iml" filepath="$PROJECT_DIR$/Julian-original/Julian-original.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Julian-referent/Julian-referent.iml" filepath="$PROJECT_DIR$/Julian-referent/Julian-referent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Julian-service/Julian-service.iml" filepath="$PROJECT_DIR$/Julian-service/Julian-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Julian-web/Julian-web.iml" filepath="$PROJECT_DIR$/Julian-web/Julian-web.iml" />
+    </modules>
+  </component>
+</project>
